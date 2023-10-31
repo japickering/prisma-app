@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "dev": "npx ts-node index.ts"
+    "dev": "npx ts-node index.ts",
+    "prisma:init": "npx prisma init",
+    "prisma:migrate": "npx prisma migrate dev --name init",
+    "docker:start": "docker compose start -D",
+    "docker:stop": "docker compose stop"
   },
   "keywords": [],
   "author": "",
