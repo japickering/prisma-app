@@ -8,7 +8,7 @@ https://www.prisma.io/docs/getting-started/quickstart
 
 Use appropriate database credentials depending on the environment you'll be hosting your database on. You should always use a local sandbox or staging environment before rolling out wholesale db changes to your live server environment. As a full stack or database admin it is your responsibility to ensure you don't accidentially overwrite important or critical client data you can't afford to lose. Do make data backups before running a batch process that has the power to make permanent changes to your database. Managing extra user roles and permissions is outside the scope of this project.
 
-# Install project dependencies:
+## Install project dependencies:
 
 1. Download and install the latest free version of Docker for your computer's OS
 2. Download and install globally the latest stable release of Node.js
@@ -21,9 +21,14 @@ Use appropriate database credentials depending on the environment you'll be host
 
 Define model(s) in the schema.prisma file that represent the db tables and field types you want to create. The schema model Profile is just an example. You should create unique data models to closely match your project data requirements.
 
-Next run docker comopse up to start up a new docker container and server based on the config set in the docker-compose.yml file.
+Next run docker comopse up to start up a new docker container and local server based on the config set in the docker-compose.yml file.
 
 `docker compose up -D`
+
+## Shutting down the Docker container
+
+We can shutdown down our docker container from our project at any time by running. This will stop any instance of our local server running in the background and free up system resources.
+`docker compose stop`
 
 ## Configure a .env file and DB connection
 
