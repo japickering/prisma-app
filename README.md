@@ -8,10 +8,10 @@ https://www.prisma.io/docs/getting-started/quickstart
 
 Use appropriate database credentials depending on the environment you'll be hosting your database on. You should always use a local sandbox or staging environment before rolling out wholesale db changes to your live server environment. As a full stack or database admin it is your responsibility to ensure you don't accidentially overwrite important or critical client data you can't afford to lose. Do make data backups before running a batch process that has the power to make permanent changes to your database. Managing extra user roles and permissions is outside the scope of this project.
 
-## Install project dependencies:
+## Install project dependencies:
 
-1. Download and install the latest free version of Docker for your computer's OS
-2. Download and install globally the latest stable release of Node.js
+1. To manage and sync PostGres databases download and install the latest version of Docker for your operating system.
+2. Download and install globally the latest stable release of Node.js.
 3. Install the npm packages for the project
    `npm install`
 
