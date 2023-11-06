@@ -17,6 +17,9 @@ Use appropriate database credentials depending on the environment you'll be host
 
 ## Initialise Prisma
 
+Assuming we've created the prisma subfolder and schema.prisma file inside of that using Prisma CLI `npx prisma`
+we can go ahead with the rest of the setup.
+
 `npx prisma init`
 
 Define model(s) in the schema.prisma file that represent the db tables and field types you want to create. The schema model Profile is just an example. You should create unique data models to closely match your project data requirements.
